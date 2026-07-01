@@ -15,12 +15,13 @@ rmSync(assetsDir, { recursive: true, force: true })
 mkdirSync(join(addinDir, 'assets'), { recursive: true })
 mkdirSync(assetsDir, { recursive: true })
 
-// Move HTML entry files
-if (existsSync(join(dist, 'index.html'))) {
-  copyFileSync(join(dist, 'index.html'), join(addinDir, 'index.html'))
+// Move HTML entry files (Vite preserves input structure, so they're in dist/dev/)
+const devDist = join(dist, 'dev')
+if (existsSync(join(devDist, 'index.html'))) {
+  copyFileSync(join(devDist, 'index.html'), join(addinDir, 'index.html'))
 }
-if (existsSync(join(dist, 'dialog.html'))) {
-  copyFileSync(join(dist, 'dialog.html'), join(addinDir, 'dialog.html'))
+if (existsSync(join(devDist, 'dialog.html'))) {
+  copyFileSync(join(devDist, 'dialog.html'), join(addinDir, 'dialog.html'))
 }
 
 // Move JS/CSS assets
