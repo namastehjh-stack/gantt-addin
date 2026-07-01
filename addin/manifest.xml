@@ -6,15 +6,14 @@
   xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
   xsi:type="TaskPaneApp">
 
-  <Id>fd6a1b80-9e7d-4c2b-b1f3-8e01a9d5c4e2</Id>
+  <Id>a7c3e9f2-4b8d-6e1a-9c3f-2d5b8e7f1a04</Id>
   <Version>1.0.0.0</Version>
   <ProviderName>Unicorn Team</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   
-  <DisplayName DefaultValue="FY27 Gantt (Shared)" />
+  <DisplayName DefaultValue="FY27 Gantt (Online)" />
   <Description DefaultValue="FY27 Resource Gantt Chart — by Person and by Project" />
-  <IconUrl DefaultValue="https://localhost:5173/addin/assets/icon.png" />
-
+  <IconUrl DefaultValue="https://namastehjh-stack.github.io/gantt-addin/addin/assets/icon.png" />
   <SupportUrl DefaultValue="https://github.com" />
   
   <Hosts>
@@ -22,7 +21,7 @@
   </Hosts>
   
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://10.136.160.18:5173/addin/index.html" />
+    <SourceLocation DefaultValue="https://namastehjh-stack.github.io/gantt-addin/addin/index.html" />
   </DefaultSettings>
   
   <Permissions>ReadWriteDocument</Permissions>

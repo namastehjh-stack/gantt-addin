@@ -13,7 +13,7 @@
   
   <DisplayName DefaultValue="FY27 Gantt (Online)" />
   <Description DefaultValue="FY27 Resource Gantt Chart — by Person and by Project" />
-  <IconUrl DefaultValue="https://namastehjh-stack.github.io/gantt-addin/assets/icon.png" />
+  <IconUrl DefaultValue="https://namastehjh-stack.github.io/gantt-addin/addin/assets/icon.png" />
   <SupportUrl DefaultValue="https://github.com" />
   
   <Hosts>
@@ -21,7 +21,7 @@
   </Hosts>
   
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://namastehjh-stack.github.io/gantt-addin/index.html" />
+    <SourceLocation DefaultValue="https://namastehjh-stack.github.io/gantt-addin/addin/index.html" />
   </DefaultSettings>
   
   <Permissions>ReadWriteDocument</Permissions>
