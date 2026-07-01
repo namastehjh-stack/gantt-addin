@@ -59,7 +59,7 @@ for (const f of ['index.html', 'dialog.html']) {
   const fp = join(addinDir, f)
   if (existsSync(fp)) {
     let html = readFileSync(fp, 'utf-8')
-    html = html.replace(/\.\/assets\//g, '../assets/')
+    html = html.replace(/(?<!\.)\.\/assets\//g, '../assets/')
     writeFileSync(fp, html)
   }
 }
