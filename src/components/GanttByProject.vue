@@ -73,11 +73,7 @@ const props = defineProps({
 const allMonths = ["Sep'25","Oct","Nov","Dec","Jan'26","Feb","Mar","Apr","May","Jun","Jul","Aug",
                    "Sep'26","Oct","Nov","Dec","Jan'27","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep'27"]
 const marginLeft = 100
-const cellW = computed(() => {
-  const avail = window.innerWidth - marginLeft - 30
-  const months = visibleMonths.value.length
-  return Math.max(28, Math.min(55, avail / months))
-})
+const cellW = 42
 const rowH = 44
 const top = 32
 
